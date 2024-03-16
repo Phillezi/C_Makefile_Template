@@ -5,10 +5,16 @@ It is designed to keep things neat by putting object files in a out directory an
 
 ## Installation
 
-You can download a zip of this repository by pressing the green `Code` button.
-
+You can use this template repository as a template by clicking `Use this template` and then `Create a new repository`, click [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) to see a tutorial.
 
 **Otherwise you can:**
+
+
+Download a zip of this repository by pressing the green `Code` button.
+
+
+or
+
 
 Clone the github repo and remove the `.git` (so you can create your own repository):
 
