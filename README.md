@@ -1,6 +1,7 @@
 # Simple Makefile Template for C Projects
 
 This is a straightforward Makefile template designed for building C projects using GCC.
+It is designed to keep things neat by putting object files in a out directory and the finished executable in the root directory.
 
 ## Instructions
 
@@ -45,5 +46,6 @@ For a list of available Makefile targets and their descriptions, you can use the
 make help
 ```
 
+Once the program is compiled, the object files will be stored in the `out` directory, and the executable will be generated in the root directory (the same directory as the Makefile).
 
 Feel free to modify the Makefile to suit your project's specific requirements.
