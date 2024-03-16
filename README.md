@@ -3,8 +3,37 @@
 This is a straightforward Makefile template designed for building C projects using GCC.
 It is designed to keep things neat by putting object files in a out directory and the finished executable in the root directory.
 
-## Instructions
+## Installation
 
+You can download a zip of this repository by pressing the green `Code` button.
+
+
+**Otherwise you can:**
+
+Clone the github repo and remove the `.git` (so you can create your own repository):
+
+**On Linux**
+```bash
+git clone --depth 1 --no-single-branch https://github.com/Phillezi/C_Makefile_Template.git
+cd C_Makefile_Template
+rm -rf .git
+```
+
+**On Windows**,
+I havent tried this, but it should work:
+```ps
+git clone --depth 1 --no-single-branch https://github.com/Phillezi/C_Makefile_Template.git
+cd C_Makefile_Template
+del /Q .git
+```
+
+### Linux
+To just get the makefile:
+```bash
+wget https://github.com/Phillezi/C_Makefile_Template/blob/master/makefile
+```
+
+## Instructions
 ### Windows
 
 *This assumes you are using mingw32.*
