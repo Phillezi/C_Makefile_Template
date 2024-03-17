@@ -54,7 +54,7 @@ debug: CFLAGS += $(DEBUG_CFLAGS)
 debug: $(TARGET)
 
 $(TARGET): $(OBJ_FILES)
-	$(CC) -o $@ $^ $(CFLAGS)
+	$(CC) -o $@$(BIN_EXT) $^ $(CFLAGS)
 
 .PHONY: clean
 
@@ -75,4 +75,4 @@ help:
 
 # Clean the out dir and target executable
 clean:
-	$(RM) $(OUT_DIR) $(TARGET)
+	$(RM) $(OUT_DIR) $(TARGET)$(BIN_EXT)
