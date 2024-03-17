@@ -3,7 +3,8 @@
 # Desc:		A simple Makefile template to build c programs with gcc
 
 CC=gcc
-CFLAGS=-Wall -Wpedantic# Add your library specific flags here
+CFLAGS=-Wall -Wpedantic
+LIBFLAGS=# Add your library specific flags here
 DEBUG_CFLAGS=-g
 
 SRC_DIR=src
@@ -23,6 +24,8 @@ else
     MKDIR = mkdir -p $(OUT_DIR)
     RM = rm -rf
 endif
+
+CFLAGS+=$(LIBFLAGS)
 
 # Check if the src directory exists, if not prompt the user to enter the name of their src dir
 ifeq ($(wildcard $(SRC_DIR)),)
