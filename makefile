@@ -77,5 +77,11 @@ help:
 	@echo "$$HELP_MESSAGE"
 
 # Clean the out dir and target executable
+ifeq ($(OS), Windows_NT)
+clean:
+	rmdir /s /q $(OUT_DIR) 
+	$(RM) $(TARGET)$(BIN_EXT)
+else
 clean:
 	$(RM) $(OUT_DIR) $(TARGET)$(BIN_EXT)
+endif
