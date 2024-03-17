@@ -34,14 +34,14 @@ ifeq ($(wildcard $(SRC_DIR)/$(TARGET).c),)
 $(error Target source file '$(TARGET).c' not found in $(SRC_DIR). Please specify the target file using 'make TARGET=target_file_name' or edit the makefile)
 endif
 
-SRC_FILES := $(wildcard $(SRC_DIR)/*.c)
+SRC_FILES := $(wildcard $(SRC_DIR)/**/*.c) $(wildcard $(SRC_DIR)/*.c)
 
 OBJ_FILES := $(patsubst $(SRC_DIR)/%.c,$(OUT_DIR)/%.o,$(SRC_FILES))
 
 DEP_FILES := $(OBJ_FILES:.o=.d)
 
 $(OUT_DIR)/%.o: $(SRC_DIR)/%.c
-	$(MKDIR)
+	$(MKDIR) $(dir $@)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 # Include auto-generated dependency files
