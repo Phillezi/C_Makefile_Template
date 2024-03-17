@@ -44,7 +44,7 @@ OBJ_FILES := $(patsubst $(SRC_DIR)/%.c,$(OUT_DIR)/%.o,$(SRC_FILES))
 DEP_FILES := $(OBJ_FILES:.o=.d)
 
 $(OUT_DIR)/%.o: $(SRC_DIR)/%.c
-	$(MKDIR) $(dir $@)
+	$(MKDIR)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
 # Include auto-generated dependency files
