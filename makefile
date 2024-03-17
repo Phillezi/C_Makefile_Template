@@ -15,7 +15,7 @@ ifeq ($(OS), Windows_NT)
     # Windows specific
     BIN_EXT =.exe
     CFLAGS +=-lmingw32
-    MKDIR = powershell -Command "if (!(Test-Path -Path $(OUT_DIR) -PathType Container)) { New-Item -ItemType Directory -Path $(OUT_DIR) }; if (!(Test-Path -Path $(dir $@) -PathType Container)) { New-Item -ItemType Directory -Path $(dir $@) }"
+    MKDIR = powershell -Command "if (!(Test-Path -Path $(OUT_DIR) -PathType Container)) { New-Item -ItemType Directory -Path $(OUT_DIR) > $$null }; if (!(Test-Path -Path $(dir $@) -PathType Container)) { New-Item -ItemType Directory -Path $(dir $@) > $$null }"
     RM = del /Q
 else
     # Other OS (meant for Unix based os (OS X and Linux))
