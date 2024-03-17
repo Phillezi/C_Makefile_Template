@@ -23,10 +23,10 @@ Clone the github repo and remove the `.git` (so you can create your own reposito
 git clone --depth 1 --no-single-branch https://github.com/Phillezi/C_Makefile_Template.git
 cd C_Makefile_Template
 rm -rf .git
+
 ```
 
 **On Windows**,
-I havent tried this, but it should work:
 ```ps
 git clone --depth 1 --no-single-branch https://github.com/Phillezi/C_Makefile_Template.git
 cd C_Makefile_Template
