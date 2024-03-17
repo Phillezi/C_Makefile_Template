@@ -31,6 +31,7 @@ I havent tried this, but it should work:
 git clone --depth 1 --no-single-branch https://github.com/Phillezi/C_Makefile_Template.git
 cd C_Makefile_Template
 del /Q .git
+
 ```
 
 ### Linux
