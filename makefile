@@ -21,7 +21,7 @@ else
     # Other OS (meant for Unix based os (OS X and Linux))
     BIN_EXT =
     CFLAGS +=-lm
-    MKDIR = mkdir -p $(OUT_DIR)
+    MKDIR = mkdir -p $(OUT_DIR) $(dir $@)
     RM = rm -rf
 endif
 
