@@ -34,12 +34,6 @@ del /Q .git
 
 ```
 
-### Linux
-To just get the makefile:
-```bash
-wget https://github.com/Phillezi/C_Makefile_Template/blob/master/makefile
-```
-
 ## Instructions
 ### Windows
 
