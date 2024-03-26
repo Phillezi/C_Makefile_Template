@@ -25,6 +25,11 @@ cd C_Makefile_Template
 rm -rf .git
 
 ```
+or you can just get the makefile
+```bash
+wget -O makefile https://raw.githubusercontent.com/Phillezi/C_Makefile_Template/master/makefile
+
+```
 
 **On Windows**,
 ```ps
